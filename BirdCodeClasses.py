@@ -15,28 +15,28 @@ class Aves():
 
 	def __init__(self):
 
-		self.vertebralColumn = True
-		self.homeothermy = True
-		self.forelimbs = 'wings'
-		self.integumentarySystem = 'feathers'
-		self.mouthType = 'beak'
-		self.teeth = False
-		self.animalReproduction = 'oviparous'
-		self.temporalRange_ma = 72
-		self.specialty = 'Ornithology'
-		self.digestiveSystem = 'crop and gizzard'
-		self.sexChromosome = 'Z, W'
-		self.femaleChromosome = '(ZW)'
-		self.maleChromosome = '(ZZ)'
-		self.sweatGland = False
-		self.flight = True
-		self.flying = False
+		self.__vertebralColumn = True
+		self.__homeothermy = True
+		self.__forelimbs = 'wings'
+		self.__integumentarySystem = 'feathers'
+		self.__mouthType = 'beak'
+		self.__teeth = False
+		self.__animalReproduction = 'oviparous'
+		self.__temporalRange_ma = 72
+		self.__specialty = 'Ornithology'
+		self.__digestiveSystem = 'crop and gizzard'
+		self.__sexChromosome = 'Z, W'
+		self.__femaleChromosome = '(ZW)'
+		self.__maleChromosome = '(ZZ)'
+		self.__sweatGland = False
+		self.__flight = True
+		self.__flying = False
 
 	def takeOff(self, letsFly):
 		
-		self.flying = letsFly
+		self.__flying = letsFly
 
-		if self.flying:
+		if self.__flying:
 			return "Mulsant 1 is flying"
 
 		else:
@@ -45,9 +45,9 @@ class Aves():
 
 	def state(self):
 
-		print("The integumentary system of Mulsant 1 is: ", self.integumentarySystem)
-		print("The forelimbs of Mulsant 1 are: " , self.forelimbs)
-		print("The mouth type of Mulsant 1 is: ", self.mouthType)
+		print("The integumentary system of Mulsant 1 is: ", self.__integumentarySystem)
+		print("The forelimbs of Mulsant 1 are: " , self.__forelimbs)
+		print("The mouth type of Mulsant 1 is: ", self.__mouthType)
 
 
 # ------------------------------------------- Object creation -----------------------------------------------
@@ -69,6 +69,7 @@ print()
 Coruscans1 = Aves()
 print(Mulsant1.takeOff(False))
 print()
+Coruscans1.__integumentarySystem = 'fear'
 Coruscans1.state()
 print()
 
