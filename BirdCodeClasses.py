@@ -1,3 +1,16 @@
+# ---------------------------------  Aves class creation -----------------------------------
+print()
+print(" ------------------------------------------------------------------------------------")
+print()
+print()
+print("                             BirdCode version 1: The Library of Life                  ")
+print()
+print()
+print(" -------------------------------------------------------------------------------------")
+print()
+print()
+
+
 class Aves():
 
 	vertebralColumn = True
@@ -17,11 +30,9 @@ class Aves():
 	flight = True
 	flying = False
 
-	def takeOff(self):
-		self.flying = True
+	def takeOff(self, letsFly):
+		self.flying = letsFly
 
-
-	def state(self):
 		if self.flying:
 			return "Mulsant 1 is flying"
 
@@ -29,15 +40,31 @@ class Aves():
 			return "Mulsant 1 is stopped"
 
 
+	def state(self):
 
+		print("The integumentary system of Mulsant 1 is: ", self.integumentarySystem)
+		print("The forelimbs of Mulsant 1 are: " , self.forelimbs)
+		print("The mouth type of Mulsant 1 is: ", self.mouthType)
+		
+
+
+print("--------------------------------------- First object creation ----------------------------------")
+
+print()
 Mulsant1 = Aves()
+print(Mulsant1.takeOff(True))
+Mulsant1.state()
+print()
 
-print("The integumentary system of Mulsant 1 is: " , Mulsant1.integumentarySystem)
-print("The forelimbs of Mulsant 1 are: " , Mulsant1.forelimbs)
-print("The mouth type of Mulsant 1 is: ", Mulsant1.mouthType)
-print("Mulsant 1 is flying? ", Mulsant1.flying)
-Mulsant1.takeOff()
-print(Mulsant1.state())
+print("------------------------------------- second object creation --------------------------------------")
+
+print()
+Coruscans1 = Aves()
+print(Mulsant1.takeOff(False))
+Coruscans1.state()
+print()
+
+
 
 
 
