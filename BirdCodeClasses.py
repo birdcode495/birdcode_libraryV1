@@ -18,7 +18,15 @@ class Aves():
 	flying = False
 
 	def takeOff(self):
-		flying = True
+		self.flying = True
+
+
+	def state(self):
+		if (self.takeOff):
+			print("Mulsant 1 is flying")
+
+		else:
+			print("Mulsant 1 is stopped")
 
 
 
@@ -27,6 +35,9 @@ Mulsant1 = Aves()
 print("The integumentary system of Mulsant 1 is: " , Mulsant1.integumentarySystem)
 print("The forelimbs of Mulsant 1 are: " , Mulsant1.forelimbs)
 print("The mouth type of Mulsant 1 is: ", Mulsant1.mouthType)
+print("Mulsant 1 is flying? ", Mulsant1.flying)
+Mulsant1.takeOff()
+print(Mulsant1.state())
 
 
 
