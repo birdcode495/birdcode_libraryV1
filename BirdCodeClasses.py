@@ -24,6 +24,10 @@ class Aves():
 
 Mulsant1 = Aves()
 
+print("The integumentary system of Mulsant 1 is: " , Mulsant1.integumentarySystem)
+print("The forelimbs of Mulsant 1 are: " , Mulsant1.forelimbs)
+print("The mouth type of Mulsant 1 is: ", Mulsant1.mouthType)
+
 
 
 
