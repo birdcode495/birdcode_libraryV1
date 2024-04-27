@@ -11,7 +11,7 @@ print()
 print()
 
 
-# ---------------------------------  Creation of the class Aves -----------------------------------
+# ---------------------------------  Creation of the Superclass Aves -----------------------------------
 
 
 class Aves():
@@ -21,8 +21,8 @@ class Aves():
 		self.__class_scientificName = 'Aves'
 		self.__class_englishName = 'Birds'
 		self.__class_spanishName = 'Aves'
-		self.__class_frenchname = ''
-		self.__class_germanName = ''
+		self.__class_frenchname = 'Oiseaux'
+		self.__class_germanName = 'Vögel'
 		self.__class_chineseName = '鸟类'
 		self.__class_speciesNumber_gbif = 14825
 		self.__vertebralColumn = True
@@ -32,7 +32,7 @@ class Aves():
 		self.__mouthType = 'beak'
 		self.__teeth = False
 		self.__animalReproduction = 'oviparous'
-		self.__temporalRange_ma = 72
+		self.__class_temporalRange_ma = 72
 		self.__speciality = 'Ornithology'
 		self.__digestiveSystem = 'crop and gizzard'
 		self.__sexChromosome = 'Z, W'
@@ -64,18 +64,20 @@ class Aves():
 
 
 
-# --------------------------------------- Creation of the class Apodiformes ----------------------------------
+## --------------------------------------- Creation of the subclass Apodiformes ----------------------------------
 
 
 class Apodiformes(Aves):
 
-	self.__order_scientificName = 'Apodiformes'
-	self.__englishName = ''
-	self.__spanishName = ''
-	self.__frenchName = ''
-	self.__germanName = ''
-	self.__chineseName = ''
-	self.__order_speciesNumber_gbif = 541
+	def __init__(self):
+
+		self.__order_scientificName = 'Apodiformes'
+		self.__englishName = 'swifts, treeswifts and hummingbirds'
+		self.__spanishName = 'vencejos, salaganas, vencejos arborícolas y colibríes'
+		self.__frenchName = ''
+		self.__germanName = ''
+		self.__chineseName = ''
+		self.__order_speciesNumber_gbif = 541
 
 
 
@@ -83,7 +85,29 @@ class Apodiformes(Aves):
 
 
 
-# ------------------------------------- Creation of the class Trochilidae ------------------------------------
+### ------------------------------------- Creation of the subclass Trochilidae ------------------------------------
+
+
+class Trochilidae(Apodiformes):
+
+	def __init__(self):
+
+		self.__family_scientificName = 'Trochilidae'
+		self.__englishName = 'Hummingbirds'
+		self.__spanishName = 'Colibríes'
+		self.__frenchName = ''
+		self.__germanName = ''
+		self.__chineseName = ''
+		self.__family_speciesNumber_gbif = 387
+		self.__family_endemism = 'America'
+		self.__family_temporalRange_ma = 30
+
+
+
+
+
+
+
 
 
 
@@ -120,4 +144,4 @@ print()
 
 
 
-# ----------------------------------------- Creation of the class T
+
