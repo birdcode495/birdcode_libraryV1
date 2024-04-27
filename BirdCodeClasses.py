@@ -168,6 +168,24 @@ class Trochilinae(Trochilidae):
 
 
 
+##### ------------------------------------ Creation of the subclasses of the Trochilidae family genuses ------------------
+
+#### & ----------------------------------- Subfamily Florisuginae --------------
+
+
+class Topaza(Florisuginae):
+
+	def __init__(self):
+
+		self.__genus_scientificName = 'Topaza'
+
+
+class Florisuga(Florisuginae):
+
+	def __init__(self):
+
+		self.__genus_scientificName = 'Florisuga'
+
 
 
 
