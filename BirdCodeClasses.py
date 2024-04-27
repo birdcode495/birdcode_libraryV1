@@ -1,4 +1,4 @@
-# ---------------------------------  Aves class creation -----------------------------------
+print()
 print()
 print(" ------------------------------------------------------------------------------------")
 print()
@@ -11,10 +11,19 @@ print()
 print()
 
 
+# ---------------------------------  Creation of the class Aves -----------------------------------
+
+
 class Aves():
 
 	def __init__(self):
 
+		self.__scientificName = 'Aves'
+		self.__class_englishName = 'Birds'
+		self.__class_spanishName = 'Aves'
+		self.__class_frenchname = ''
+		self.__class_germanName = ''
+		self.__class_chineseName = '鸟类'
 		self.__vertebralColumn = True
 		self.__homeothermy = True
 		self.__forelimbs = 'wings'
