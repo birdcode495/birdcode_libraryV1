@@ -22,11 +22,11 @@ class Aves():
 
 
 	def state(self):
-		if (self.takeOff):
-			print("Mulsant 1 is flying")
+		if self.flying:
+			return "Mulsant 1 is flying"
 
 		else:
-			print("Mulsant 1 is stopped")
+			return "Mulsant 1 is stopped"
 
 
 
