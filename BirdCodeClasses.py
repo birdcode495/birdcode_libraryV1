@@ -15,5 +15,16 @@ class Aves():
 	maleChromosome = '(ZZ)'
 	sweatGland = False
 	flight = True
-	flying= False
+	flying = False
+
+	def takeOff(self):
+		pass
+
+
+
+
+
+
+
+
 
