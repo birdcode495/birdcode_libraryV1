@@ -27,9 +27,9 @@ class Aves():
 		self.__class_speciesNumber_gbif = 14825
 		self.__vertebralColumn = True
 		self.__homeothermy = True
-		self.__forelimbs = 'wings'
-		self.__integumentarySystem = 'feathers'
-		self.__mouthType = 'beak'
+		self.forelimbs = 'wings'
+		self.integumentarySystem = 'feathers'
+		self.mouthType = 'beak'
 		self.__teeth = False
 		self.__animalReproduction = 'oviparous'
 		self.__class_temporalRange_ma = 72
@@ -57,9 +57,9 @@ class Aves():
 
 	def state(self):
 
-		print("The integumentary system of Mulsant 1 is: ", self.__integumentarySystem)
-		print("The forelimbs of Mulsant 1 are: " , self.__forelimbs)
-		print("The mouth type of Mulsant 1 is: ", self.__mouthType)
+		print("The integumentary system of Mulsant 1 is: ", self.integumentarySystem)
+		print("The forelimbs of Mulsant 1 are: " , self.forelimbs)
+		print("The mouth type of Mulsant 1 is: ", self.mouthType)
 
 
 
@@ -71,13 +71,15 @@ class Apodiformes(Aves):
 
 	def __init__(self):
 
-		self.__order_scientificName = 'Apodiformes'
-		self.__order_englishName = 'swifts, treeswifts and hummingbirds'
-		self.__spanishName = 'vencejos, salaganas, vencejos arborícolas y colibríes'
-		self.__frenchName = ''
-		self.__germanName = ''
-		self.__chineseName = ''
-		self.__order_speciesNumber_gbif = 541
+		super().__init__()
+
+		self.order_scientificName = 'Apodiformes'
+		self.order_englishName = 'swifts, treeswifts and hummingbirds'
+		self.spanishName = 'vencejos, salaganas, vencejos arborícolas y colibríes'
+		self.frenchName = ''
+		self.germanName = ''
+		self.chineseName = ''
+		self.order_speciesNumber_gbif = 541
 
 
 
@@ -91,6 +93,8 @@ class Apodiformes(Aves):
 class Trochilidae(Apodiformes):
 
 	def __init__(self):
+
+		super().__init__()
 
 		self.__family_scientificName = 'Trochilidae'
 		self.__englishName = 'Hummingbirds'
@@ -115,6 +119,8 @@ class Florisuginae(Trochilidae):
 
 	def __init__(self):
 
+		super().__init__()
+
 		self.__subfamily_scientificName = 'Florisuginae'
 		self.__subfamily_speciesNumber = 4
 		self.__englishName = 'topazes'
@@ -123,6 +129,8 @@ class Florisuginae(Trochilidae):
 class Phaethornithinae(Trochilidae):
 
 	def __init__(self):
+
+		super().__init__()
 
 		self.__subfamily_scientificName = 'Phaethornithinae'
 		self.__subfamily_speciesNumber = 37
@@ -133,6 +141,8 @@ class Polytminae(Trochilidae):
 
 	def __init__(self):
 
+		super().__init__()
+
 		self.__subfamily_scientificName = 'Polytminae'
 		self.__subfamily_speciesNumber = 29
 		self.__englishName = 'mangoes'
@@ -142,14 +152,18 @@ class Lesbiinae(Trochilidae):
 
 	def __init__(self):
 
+		super().__init__()
+
 		self.__subfamily_scientificName = 'Lesbiinae'
-		self.__subfamily_speciesNumber = 
+		self.__subfamily_speciesNumber = 30
 		self.__englishName = 'brilliants and coquettes'
 
 
 class Patagoninae(Trochilidae):
 
 	def __init__(self):
+
+		super().__init__()
 
 		self.__subfamily_scientificName = 'Patagoninae'
 		self.__subfamily_speciesNumber = 1
@@ -159,6 +173,8 @@ class Patagoninae(Trochilidae):
 class Trochilinae(Trochilidae):
 
 	def __init__(self):
+
+		super().__init__()
 
 		self.__subfamily_scientificName = 'Trochilinae'
 		self.__subfamily_speciesNumber = 170
@@ -177,12 +193,16 @@ class Topaza(Florisuginae):
 
 	def __init__(self):
 
+		super().__init__()
+
 		self.__genus_scientificName = 'Topaza'
 
 
 class Florisuga(Florisuginae):
 
 	def __init__(self):
+
+		super().__init__()
 
 		self.__genus_scientificName = 'Florisuga'
 
@@ -199,7 +219,7 @@ class Florisuga(Florisuginae):
 print("--------------------------------------- First object creation ----------------------------------")
 
 print()
-Mulsant1 = Aves()
+Mulsant1 = Topaza()
 print(Mulsant1.takeOff(True))
 print()
 Mulsant1.state()
@@ -208,7 +228,7 @@ print()
 print("------------------------------------- second object creation --------------------------------------")
 
 print()
-Coruscans1 = Aves()
+Coruscans1 = Florisuga()
 print(Mulsant1.takeOff(False))
 print()
 Coruscans1.__integumentarySystem = 'fear'
