@@ -18,7 +18,7 @@ class Aves():
 	flying = False
 
 	def takeOff(self):
-		pass
+		flying = True
 
 
 
