@@ -72,7 +72,7 @@ class Apodiformes(Aves):
 	def __init__(self):
 
 		self.__order_scientificName = 'Apodiformes'
-		self.__englishName = 'swifts, treeswifts and hummingbirds'
+		self.__order_englishName = 'swifts, treeswifts and hummingbirds'
 		self.__spanishName = 'vencejos, salaganas, vencejos arborícolas y colibríes'
 		self.__frenchName = ''
 		self.__germanName = ''
@@ -105,6 +105,64 @@ class Trochilidae(Apodiformes):
 
 
 
+
+
+
+#### ------------------------------------- Creation of the subclasses of the Trochilidae subfamilies ----------------------------------------
+
+
+class Florisuginae(Trochilidae):
+
+	def __init__(self):
+
+		self.__subfamily_scientificName = 'Florisuginae'
+		self.__subfamily_speciesNumber = 4
+		self.__englishName = 'topazes'
+
+
+class Phaethornithinae(Trochilidae):
+
+	def __init__(self):
+
+		self.__subfamily_scientificName = 'Phaethornithinae'
+		self.__subfamily_speciesNumber = 37
+		self.__englishName = 'hermits'
+
+
+class Polytminae(Trochilidae):
+
+	def __init__(self):
+
+		self.__subfamily_scientificName = 'Polytminae'
+		self.__subfamily_speciesNumber = 29
+		self.__englishName = 'mangoes'
+
+
+class Lesbiinae(Trochilidae):
+
+	def __init__(self):
+
+		self.__subfamily_scientificName = 'Lesbiinae'
+		self.__subfamily_speciesNumber = 
+		self.__englishName = 'brilliants and coquettes'
+
+
+class Patagoninae(Trochilidae):
+
+	def __init__(self):
+
+		self.__subfamily_scientificName = 'Patagoninae'
+		self.__subfamily_speciesNumber = 1
+		self.__englishName = 'giant hummingbird'
+
+
+class Trochilinae(Trochilidae):
+
+	def __init__(self):
+
+		self.__subfamily_scientificName = 'Trochilinae'
+		self.__subfamily_speciesNumber = 170
+		self.__englishName = 'mountain gems, bees and emeralds'
 
 
 
