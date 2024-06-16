@@ -1,3 +1,20 @@
+
+
+# ----------------------------------------------------- BirdCode: The Library of Life ---------------------------------------------------
+
+from BirdCode_SuperClass import Eukaryota
+
+
+
+
+
+
+
+
+
+
+
+
 print()
 print()
 print(" ------------------------------------------------------------------------------------")
@@ -14,9 +31,11 @@ print()
 # ---------------------------------  Creation of the Superclass Aves -----------------------------------
 
 
-class Aves():
+class Aves(Eukaryota):
 
 	def __init__(self):
+
+		super().__init__()
 
 		self.__class_scientificName = 'Aves'
 		self.__class_englishName = 'Birds'
@@ -24,7 +43,7 @@ class Aves():
 		self.__class_frenchname = 'Oiseaux'
 		self.__class_germanName = 'Vögel'
 		self.__class_chineseName = '鸟类'
-		self.__class_speciesNumber_gbif = 14825
+		self.__class_speciesRichness_gbif = 14825
 		self.__vertebralColumn = True
 		self.__homeothermy = True
 		self.forelimbs = 'wings'
@@ -195,7 +214,7 @@ class Topaza(Florisuginae):
 
 		super().__init__()
 
-		self.__genus_scientificName = 'Topaza'
+		self.genus_scientificName = 'Topaza'
 
 
 class Florisuga(Florisuginae):
@@ -224,6 +243,7 @@ print(Mulsant1.takeOff(True))
 print()
 Mulsant1.state()
 print()
+print("The scientific name of Mulsant1 is: ", Mulsant1.__genus_scientificName)
 
 print("------------------------------------- second object creation --------------------------------------")
 
